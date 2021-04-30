@@ -26,3 +26,22 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+const modal = document.getElementById('modal')
+const likeButtons = document.getElementsByClassName('like-glyph')
+
+modal.className = "hidden"
+
+for (const heart of likeButtons) {
+  heart.addEventListener('click', () => {
+    mimicServerCall()
+    .then(()=> {
+      heart.className = "activated-heart"
+    })
+    .catch(() => {
+      modal.style.visibility = "visible"
+    })
+  })
+}
+document.addEventListener('DOMContentLoaded', function() {
+
+})
