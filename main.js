@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })
 // Your JavaScript code goes here!
-EMPTY_HEART.addEventListener("click", mimicServerCall){
-  return
-};
+// EMPTY_HEART.addEventListener("click", mimicServerCall){
+//   return
+// };
 
 
 
